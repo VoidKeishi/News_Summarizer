@@ -43,3 +43,18 @@ nltk.download('punkt')
 nltk.download('stopwords')
 ```
 3. Run the news_summarizer.py file using Python.
+```
+py News_Summarizer.py
+```
+## III. Result
+The News Summarizer desktop app allows you to summarize news articles provided a URL and analyze the sentiment of the article's summary. The app utilizes a pre-trained logistic regression model for sentiment analysis.   
+### How to use the app:   
+  1. Launch the app by running the news_summarizer.py file.
+  2. Enter the URL of a news article in the provided input field.
+  3. Click the "Start" button to initiate the summarization process.
+  4. The app will extract the article's title, authors, publication date, and summary.
+  5. The sentiment of the summary will be analyzed using the pre-trained logistic regression model.
+  6. The results, including the title, authors, publication date, summary, and sentiment, will be displayed in the respective fields.
+  Note: If an invalid URL is entered or an error occurs during the process, an error message will be displayed.
+
+  Feel free to explore the code and modify it as per your requirements. Enjoy summarizing news articles and analyzing their sentiment with the News Summarizer desktop app!
