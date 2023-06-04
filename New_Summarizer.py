@@ -14,8 +14,8 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 
-filename = 'Machine_Learning\logistic_regression_model.pkl'
-filename2 = 'Machine_Learning\\tfidf_vectorizer.pkl'
+filename = 'logistic_regression_model.pkl'
+filename2 = 'tfidf_vectorizer.pkl'
 loaded_model = pickle.load(open(filename, 'rb'))
 tfidf_vectorizer = pickle.load(open(filename2, 'rb'))
 
