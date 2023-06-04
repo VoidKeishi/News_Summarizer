@@ -63,6 +63,6 @@ The News Summarizer desktop app allows you to summarize news articles provided a
 ![image](https://github.com/VoidKeishi/News_Summarizer/assets/118616093/410f18ee-9076-4705-9aea-ba6816c89e76)
 ## Video
 
-[Video](https://drive.google.com/drive/folders/1wGQ0TBhK-keEWN9quxM9P_ERcSiDeFXP)
+[Video](https://drive.google.com/file/d/11hXwGjeYVIAAvCfQZzIQM1h7UmqQXNeP/view?usp=drive_link)
 
 
