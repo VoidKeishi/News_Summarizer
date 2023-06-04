@@ -58,5 +58,11 @@ The News Summarizer desktop app allows you to summarize news articles provided a
   Note: If an invalid URL is entered or an error occurs during the process, an error message will be displayed.
 
   Feel free to explore the code and modify it as per your requirements. Enjoy summarizing news articles and analyzing their sentiment with the News Summarizer desktop app!    
-  
+
+## Sample image
 ![image](https://github.com/VoidKeishi/News_Summarizer/assets/118616093/410f18ee-9076-4705-9aea-ba6816c89e76)
+## Video
+
+[Video](https://drive.google.com/drive/folders/1wGQ0TBhK-keEWN9quxM9P_ERcSiDeFXP)
+
+
