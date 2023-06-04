@@ -18,3 +18,28 @@
   - Results: The classification reports for the testing and validation sets are displayed, showing the precision, recall, and F1-score for each sentiment class. The trained logistic regression model is saved to a file for future use.
 
 ### 2) Desktop app
+#### Libraries I'm using
+- tkinter : A library for creating basic Graphical User Interfaces (GUI).
+- pickle : A library for creating basic Graphical User Interfaces (GUI).
+- newspaper : A library for extracting and parsing data from news articles provided a URL
+- re : A library for working with regular expressions, used for text processing.
+- nltk : The Natural Language Toolkit, which provides various tools and resources for natural language processing tasks such as tokenization, stemming, and stop words removal.
+- sklearn : The scikit-learn library, which provides a collection of machine learning algorithms and tools for data preprocessing, modeling, and evaluation.
+
+## II. Installation
+1. Clone the repository or download the source code files.
+2. Install the required libraries as mentioned above.
+```
+  pip install tkinter
+  pip install pickle
+  pip install newspaper3k
+  pip install nltk
+  pip install scikit-learn
+```
+Additionally, the code downloads the required NLTK resources using the nltk.download function. If you haven't downloaded these resources before, you can run the following lines of code once:
+```
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+```
+3. Run the news_summarizer.py file using Python.
