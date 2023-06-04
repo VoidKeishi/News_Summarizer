@@ -3,7 +3,6 @@ import pickle
 from tkinter import ttk
 from tkinter.scrolledtext import ScrolledText
 from newspaper import Article
-from textblob import TextBlob
 import re
 import nltk
 from nltk import word_tokenize
@@ -14,15 +13,24 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 
+# Load the logistic regression model
 filename = 'logistic_regression_model.pkl'
-filename2 = 'tfidf_vectorizer.pkl'
 loaded_model = pickle.load(open(filename, 'rb'))
+
+# Load the TF-IDF vectorizer
+filename2 = 'tfidf_vectorizer.pkl'
 tfidf_vectorizer = pickle.load(open(filename2, 'rb'))
 
+# Initialize the Porter stemmer
 stemmer = PorterStemmer()
+
+# Load the set of English stopwords
 stop_words = set(stopwords.words('english'))
 
 def preprocess_text(text):
+    """
+    Preprocess the text by tokenizing, removing stopwords, and performing stemming.
+    """
     # Tokenize the text
     tokens = nltk.word_tokenize(text)
     
@@ -36,6 +44,8 @@ def preprocess_text(text):
 
 
 def summarize():
+
+    # Retrieve the news article from the given URL, display its details, summary, and sentiment analysis.
     url = url_input.get("1.0", "end").strip()
 
     try:
@@ -44,6 +54,7 @@ def summarize():
         article.parse()
         article.nlp()
 
+        # Display the article details
         title.config(state="normal")
         title.delete("1.0", "end")
         title.insert("1.0", article.title)
@@ -59,13 +70,13 @@ def summarize():
         publication_date.insert("1.0", str(article.publish_date))
         publication_date.config(state="disabled")
 
+        # Display the article summary
         summary.config(state="normal")
         summary.delete("1.0", "end")
         summary.insert("1.0", article.summary)
         summary.config(state="disabled")
 
-        analysis = TextBlob(article.text)
-
+        # Perform sentiment analysis on the article summary
         sentiment.config(state="normal")
         sentiment.delete("1.0", "end")
         
@@ -107,6 +118,8 @@ def summarize():
         sentiment.delete("1.0", "end")
         sentiment.config(state="disabled")
 
+
+# Create the main window
 root = tk.Tk()
 root.title("News Summarizer")
 root.geometry("800x600")
@@ -180,4 +193,5 @@ summary_label.pack()
 summary = ScrolledText(result_frame, height=12, width=100, state="disabled", wrap="word", font=("Arial", 12), bg='white', fg="black")
 summary.pack()
 
+# Start the main event loop
 root.mainloop()
