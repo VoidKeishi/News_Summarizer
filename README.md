@@ -57,6 +57,6 @@ The News Summarizer desktop app allows you to summarize news articles provided a
   6. The results, including the title, authors, publication date, summary, and sentiment, will be displayed in the respective fields.
   Note: If an invalid URL is entered or an error occurs during the process, an error message will be displayed.
 
-  Feel free to explore the code and modify it as per your requirements. Enjoy summarizing news articles and analyzing their sentiment with the News Summarizer desktop app!
+  Feel free to explore the code and modify it as per your requirements. Enjoy summarizing news articles and analyzing their sentiment with the News Summarizer desktop app!    
+  
 ![image](https://github.com/VoidKeishi/News_Summarizer/assets/118616093/410f18ee-9076-4705-9aea-ba6816c89e76)
-![image](https://github.com/VoidKeishi/News_Summarizer/assets/118616093/0918d2d4-a9f0-4130-92ac-06f22c195ee6)
