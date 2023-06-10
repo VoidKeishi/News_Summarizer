@@ -84,8 +84,4 @@ Feel free to explore the code and modify it as per your requirements. Enjoy summ
 
 ## Video
 
-
-
 https://github.com/VoidKeishi/News_Summarizer/assets/118616093/fd3644c6-894c-48d7-9ff2-01d202cc3210
-
-
