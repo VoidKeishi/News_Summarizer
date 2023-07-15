@@ -1,4 +1,4 @@
-newspaper3k==0.2.8
-nltk==3.6.5
-scikit-learn==0.24.2
-streamlit==0.89.0
+newspaper3k
+nltk
+scikit-learn
+streamlit
